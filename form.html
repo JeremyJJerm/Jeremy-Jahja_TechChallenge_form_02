@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Form Tech Challenge FE</title>
+</head>
+<body>
+    <div class="container">
+    <form id="myForm">
+        <h1> Register Form</h1>
+        <div class="inputContainer">
+            <label for="name"> Name</label>
+            <br>
+            <input type="text" name="name" id="name">
+            <p class="error" id="nameError"></p> 
+        </div>
+        <div class="inputContainer">
+            <label for="email"> Email</label>
+            <br>
+            <input type="text" name="email" id="email"> 
+            <p class="error" id="emailError"></p> 
+        </div>
+        <div class="inputContainer">
+            <label for="password"> Password</label>
+            <br>
+            <input type="password" id="password">
+            <p class="error" id="passError"></p> 
+        </div>
+        <div class="inputContainer">
+            <label for="cpassword"> Confirm Password</label>
+            <br>
+            <input type ="password" id="cpassword">
+            <p class="error" id="cpassError"></p> 
+        </div>
+        <div class="inputContainer">
+            <label for="age"> Age</label>
+            <br>
+            <input type="number" id="age">
+            <p class="error"  id="ageError"></p> 
+        </div>
+        <div class="inputContainer">
+            <label>Gender</label>
+            <br>
+            <input type="radio" name="gender" id="male"> 
+            <label for="male"> Male</label>
+            <input type="radio" name="gender" id="female"> 
+            <label for="female"> Female</label>
+            <p class="error" id="genderError"></p> 
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="agree">
+            <label for="agree">I Agree to Terms and Conditions</label>
+            <p class="error" id="agreeError"></p> 
+        </div>
+            <button type="submit" class="button"> Submit</button>
+            <button type="reset" class="button"> Reset </button>
+    </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
